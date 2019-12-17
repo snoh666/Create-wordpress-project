@@ -1,7 +1,7 @@
 # Importing functions
 import sys
 
-from functions import getWordpressVersions
+from functions import getWordpressVersions, convertProps
 
 # Importing const variables
 from props import projectsDirectory
@@ -10,6 +10,7 @@ props = sys.argv
 # Pop the first item cause its filename
 props.pop(0)
 
+props = convertProps(props)
 print(props)
 
 wordpressVersions = getWordpressVersions()
