@@ -1,1 +1,1 @@
-projectsDirectory = ''
+projectsDirectory = 'A:\\xampp\\htdocs\\'
