@@ -1,7 +1,7 @@
 # Importing functions
 import sys
 
-from functions import getLatestWordpressDir
+from functions import getWordpressVersions
 
 # Importing const variables
 from props import projectsDirectory
@@ -12,7 +12,7 @@ props.pop(0)
 
 print(props)
 
-wordpressVersions = getLatestWordpressDir()
+wordpressVersions = getWordpressVersions()
 
 if wordpressVersions == False:
   print('No wordpress files avaible')
